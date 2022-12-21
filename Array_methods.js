@@ -2,9 +2,9 @@ let arr = [1, 2, 3, 4, 5];
 
 //this methods modified array directly
 
-arr.push(6) // adds items to the end
+arr.push(6) // adds items to the end : [1, 2, 3, 4, 5, 6]
 arr.pop()   // extracts an item from the end
-arr.unshift(0); // adds items to the beginning.
+arr.unshift(0); // adds items to the beginning : [0, 1, 2, 3, 4, 5]
 arr.shift() //  extracts an item from the beginning
 
 
@@ -19,7 +19,7 @@ let removed = arr.splice(0, 2);
 arr.splice(-1, 1); // from index -1 (one step from the end) delete 1 element,
 
 
-// arr.slice([start], [end]) 
+arr.slice([start], [end])
 // It returns a new array copying to it all items from index start to end (not including end).
 // arr.slice(1, 3) Both start and end can be negative,
 // We can also call it without arguments: arr.slice() creates a copy of arr.
@@ -175,11 +175,4 @@ result = arr.reduce((sum, current) => sum + current, 0);
 alert(result); // 15
 
 
-
-
-
-
-
-
-
-console.log(arr);
+// reduceRight : doing same job form right to left;

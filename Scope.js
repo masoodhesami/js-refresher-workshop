@@ -19,7 +19,6 @@ alert(message); // Error: message is not defined
 
 // -----------------
 
-const a = 'a';
 
 for (let i = 0; i < 5; ++i) {
     // do some 💫magic💫 with i;

@@ -5,7 +5,7 @@
 
 
 function makeFunc() {
-    const name = 'Mozilla';
+    const name = 'Masoud';
     function displayName() {
         console.log(name);
     }
@@ -13,7 +13,7 @@ function makeFunc() {
 }
 
 const myFunc = makeFunc();
-myFunc();
+myFunc(); // Masoud
 
 
 // --------------------------

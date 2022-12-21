@@ -1,7 +1,36 @@
-// A closure is the combination of a function bundled together (enclosed) with 
-// references to its surrounding state (the lexical environment). In other words, 
-// a closure gives you access to an outer function's scope from an inner function. 
-// In JavaScript, closures are created every time a function is created, at function creation time.
+//Global variables can be made local (private) with closures.
+//A closure gives you access to an outer function’s scope
+// from an inner function
+//closure give you access to the functions
+//and variables outside the function.
+
+// Initiate counter global
+let counter = 0;
+
+function add() {
+  counter += 1;
+}
+
+add();
+add();
+add();
+console.log(counter)
+// output ??
+
+
+let counter2 = 0;
+
+function add() {
+  let counter2 = 0;
+  counter2 += 1;
+}
+
+add();
+add();
+add();
+console.log(counter2)
+// output ?? 
+
 
 
 function makeFunc() {
@@ -16,7 +45,19 @@ const myFunc = makeFunc();
 myFunc(); // Masoud
 
 
+
+function outer() {
+    const outerData = "outer";
+    function inner() {
+        const innerData = "inner";
+        console.log(`${outerData} and ${innerData}`);
+    }
+    inner();
+}
+
+
 // --------------------------
+
 
 function makeAdder(x) {
     return function (y) {
